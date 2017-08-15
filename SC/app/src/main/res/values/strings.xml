@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">scliappClient</string>
+    <string name="account">账号：</string>
+    <string name="account_hint">请输入账号</string>
+    <string name="password">密码：</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="configration">网络配置</string>
+    <string name="Encompany">© 2017 Sai Cheng Logistics International Co.,Ltd</string>
+    <string name="title_activity_login">Phoenix System Pad</string>
+    <string name="Application">Phoenix System Pad</string>
+    <string name="version">Phoenix System Pad 1.0</string>
+    <string name="Chcompany">赛诚国际物流有限公司</string>
+    <string name="Stock">查询库存</string>
+    <string name="Replenishment">需补货信息</string>
+    <string name="menu">菜 单</string>
+    <string name="oa">Office Automation</string>
+    <string name="rcbgcz">在此可以进行日常办公操作</string>
+</resources>

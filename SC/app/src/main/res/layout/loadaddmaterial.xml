@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:orientation="vertical"    
+    android:layout_width="fill_parent"    
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:gravity="center">   
+
+	
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingTop="3dp">
+
+         <TextView 
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:text=""/>
+         <Spinner
+             android:layout_width="400dp"
+             android:layout_height="wrap_content"
+             android:id="@+id/loadaddmaterialspinner"
+             android:background="@drawable/my_shape_8"/>
+     </LinearLayout>
+     
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingTop="3dp">
+
+         <TextView 
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:text="编号:"/>
+         <EditText
+             android:layout_width="400dp"
+             android:layout_height="wrap_content"
+             android:id="@+id/matcodeedt"
+             android:background="@drawable/my_shape_8"
+             android:enabled="false"/>
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingTop="3dp" >
+
+         <TextView 
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:text="名称:"/>
+         <EditText 
+             android:layout_width="400dp"
+             android:layout_height="wrap_content"
+             android:background="@drawable/my_shape_8"
+             android:id="@+id/matnameedt"
+             android:enabled="false"/>
+     </LinearLayout>
+
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingTop="3dp" >
+
+         <TextView 
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:text="规格:"/>
+         <EditText 
+             android:layout_width="400dp"
+             android:layout_height="wrap_content"
+             android:background="@drawable/my_shape_8"
+             android:id="@+id/matstandardedt"
+             android:enabled="false"/>
+     </LinearLayout>
+
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingTop="3dp" >
+
+         <TextView 
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:text="单位:"/>
+		 <EditText
+             android:id="@+id/unitsedt"
+             android:layout_width="400dp"
+             android:layout_height="wrap_content"
+             android:background="@drawable/my_shape_8"
+             android:enabled="false"/>
+     </LinearLayout>
+
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingTop="3dp"
+         android:paddingBottom="3dp">
+
+         <TextView 
+             android:layout_width="40dp"
+             android:layout_height="wrap_content"
+             android:text="数量:"/>
+		<EditText
+             android:id="@+id/qtyedt"
+             android:layout_width="400dp"
+             android:layout_height="wrap_content"
+         	 android:background="@drawable/my_shape_8"/>
+
+     </LinearLayout>
+
+    
+     
+</LinearLayout> 

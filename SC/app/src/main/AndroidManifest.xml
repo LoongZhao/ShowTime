@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dragon.sc"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!-- 授权访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoadingScreen1Activity"
+            android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".activity.PreAppActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".activity.SearchActivity"></activity>
+        <activity
+            android:name=".activity.MenuActivity"
+            android:label="@string/title_activity_login"
+            android:configChanges="orientation|keyboardHidden"  >
+        </activity>
+
+        <activity
+            android:name=".activity.NewTaskActivity"
+            android:label="@string/title_activity_login"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name=".activity.SousuoActivity"
+            android:label="@string/title_activity_login"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+
+        <activity
+            android:name=".activity.UserMaterialActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".activity.StockCheckActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".activity.CheckActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".activity.SearchMenuActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".activity.CartonInformationActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".activity.ReplenishActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <service
+            android:name=".activity.uploadService">
+            <intent-filter>
+                <action android:name="com.example.dragon.sc.saveIntent"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

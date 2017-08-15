@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00928D"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/newup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/up" />
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="物料消耗"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/wcd"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/wcd" />
+
+            <TextView
+                android:id="@+id/wcdbovename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="#00928D"
+                android:textSize="9dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="32.48dp"
+        android:background="@drawable/my_shape_8"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/loadcrmq"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/accept" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Confirm   " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Remove"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/confirm"
+            android:background="@drawable/loadcrmq"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/delete" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Remove   " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Add"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/Remove"
+            android:background="@drawable/loadcrmq"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add Materials   " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/Add"
+            android:layout_marginLeft="19dp"
+            android:background="@drawable/loadcrmq"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/refresh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Search   " />
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.74">
+	    <TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="0,1,2,3,4,5,6" >
+	    
+	<TableRow 
+	        android:id="@+id/textab"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="visible">
+	        	<TextView 
+		             android:layout_width="20dip"
+		        	 android:layout_height="wrap_content"
+		        	 android:text=""
+		        	 android:gravity="center_horizontal"
+		        	 android:textColor="#000079"
+                     android:textSize="15dp"/>
+	        	<TextView    
+			        android:id="@+id/cb"       
+			        android:layout_height="wrap_content"
+			        android:layout_width="20dip"
+			        android:gravity="center_horizontal"/> 
+		         <TextView 
+		             android:layout_width="100dip"
+		        	 android:layout_height="wrap_content"
+		        	 android:text="物料编号"
+		        	 android:gravity="center_horizontal"
+		        	 android:textColor="#000079"
+                     android:textSize="15dp"/>
+		         <TextView 
+		             android:layout_width="100dip"
+		        	 android:layout_height="wrap_content"
+		        	 android:text="物料名称"
+		        	 android:gravity="center_horizontal"
+		        	 android:textColor="#000079"
+                     android:textSize="15dp"/>
+		         <TextView 
+		             android:layout_width="120dip"
+		        	 android:layout_height="wrap_content"
+		        	 android:text="规格"
+		        	 android:gravity="center_horizontal"
+		        	 android:textColor="#000079"
+                     android:textSize="15dp"/>
+		         <TextView 
+		             android:layout_width="60dip"
+		        	 android:layout_height="wrap_content"
+		        	 android:text="单位"
+		        	 android:gravity="center_horizontal"
+		        	 android:textColor="#000079"
+                     android:textSize="15dp"/>
+		         <TextView 
+		             android:layout_width="60dip"
+		        	 android:layout_height="wrap_content"
+		        	 android:text="数量"
+		        	 android:gravity="center_horizontal"
+		        	 android:textColor="#000079"
+                     android:textSize="15dp"/>
+		  
+		         <TextView 
+		             android:layout_width="100dip"
+		        	 android:layout_height="wrap_content"
+		        	 android:text="时间"
+		        	 android:gravity="center_horizontal"
+		        	 android:textColor="#000079"
+                     android:textSize="15dp"/>
+	    </TableRow>
+		<ListView
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:id="@+id/usematerialListView">
+		    
+		</ListView>
+		</TableLayout>
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

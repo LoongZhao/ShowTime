@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00928D"
+        android:gravity="center_vertical" >
+        <ImageView
+            android:id="@+id/menuup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/up" />
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="补货任务"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/wcd" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/wcd" />
+
+            <TextView
+                android:id="@+id/wcdbovename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="#00928D"
+                android:textSize="9dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="match_parent"
+         android:layout_gravity="center" >
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <LinearLayout 
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/gray">
+		    <LinearLayout 
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dp">
+		        <TextView 
+		            android:layout_width="80dip"
+		            android:layout_height="wrap_content"
+		            android:text="SKU"
+		            android:layout_marginLeft="10dp"/>
+		        <EditText 
+		            android:layout_width="250dp"
+		            android:id="@+id/sousuoEdit"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/my_shape_8"
+		            android:layout_marginLeft="10dp"/>
+		        <Button 
+		            android:layout_width="wrap_content"
+		            android:layout_height="33dp"
+		            android:text="scan"
+		            android:id="@+id/scanbutton"/>
+		    </LinearLayout>
+		    <LinearLayout 
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dp">
+		        <TextView 
+		            android:layout_width="80dip"
+		            android:layout_height="wrap_content"
+		            android:text="LOC"
+		            android:layout_marginLeft="10dp"/>
+		        <EditText 
+		            android:layout_width="250dp"
+		            android:id="@+id/LOCEdit"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/my_shape_8"
+		            android:layout_marginLeft="10dp"/>
+		        <Button 
+		            android:layout_width="wrap_content"
+		            android:layout_height="33dp"
+		            android:text="search"
+		            android:id="@+id/sousuobutton"/>
+		    </LinearLayout>
+		    
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp">
+		   		 <TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.7"
+	    android:stretchColumns="0,1,2,3,4,5" >
+
+	    <TableRow 
+	        android:id="@+id/textab"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="visible">
+	        	
+		         <TextView 
+		             android:layout_width="80dip"
+		        	 android:layout_height="wrap_content"
+		        	 android:text="Sku"
+		        	 android:gravity="center_horizontal"
+		        	 android:textColor="#000079"
+                     android:textSize="15dp"/>
+		         <TextView 
+		             android:layout_width="120dip"
+		        	 android:layout_height="wrap_content"
+		        	 android:text="Sku_Desc"
+		        	 android:gravity="center_horizontal"
+		        	 android:textColor="#000079"
+                     android:textSize="15dp"/>
+		         <TextView 
+		             android:layout_width="80dip"
+		        	 android:layout_height="wrap_content"
+		        	 android:text="From Loc"
+		        	 android:gravity="center_horizontal"
+		        	 android:textColor="#000079"
+                     android:textSize="15dp"/>
+		         <TextView 
+		             android:layout_width="80dip"
+		        	 android:layout_height="wrap_content"
+		        	 android:text="To Location"
+		        	 android:gravity="center_horizontal"
+		        	 android:textColor="#000079"
+                     android:textSize="15dp"/>
+		         <TextView 
+		             android:layout_width="80dip"
+		        	 android:layout_height="wrap_content"
+		        	 android:text="Quantity"
+		        	 android:gravity="center_horizontal"
+		        	 android:textColor="#000079"
+                     android:textSize="15dp"/>
+		         
+	    </TableRow>
+		
+	        <ListView
+		       android:id="@+id/replenishlistview"
+		       android:layout_width="wrap_content"
+		       android:layout_gravity="center_horizontal" 
+		       android:visibility="visible"/>
+	</TableLayout>
+		</LinearLayout>
+        </LinearLayout>
+		
+     </RelativeLayout>
+
+</LinearLayout>
